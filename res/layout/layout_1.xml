@@ -4,61 +4,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="activityTest.FirstAct" >
+    android:stretchColumns="1"
+    tools:context=".activityTest" >
 
-    <TableRow >
-        <TextView
-            android:layout_height="wrap_content"
-            android:text=" A:"/>
-        <EditText
-            android:id = "@+id/name_A"
-            android:layout_height = "wrap_content"
-            android:hint = "input name"
-            android:maxLines="1" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:text="none"/>
-    </TableRow>
-        <TableRow >
-        <TextView
-            android:layout_height="wrap_content"
-            android:text=" B:"/>
-        <EditText
-            android:id = "@+id/name_B"
-            android:layout_height = "wrap_content"
-            android:hint = "input name"
-            android:maxLines="1" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:text="none"/>
-    </TableRow>
-        <TableRow >
-        <TextView
-            android:layout_height="wrap_content"
-            android:text=" C:"/>
-        <EditText
-            android:id = "@+id/name_C"
-            android:layout_height = "wrap_content"
-            android:hint = "input name"
-            android:maxLines="1" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:text="none"/>
-    </TableRow>
-        <TableRow >
-        <TextView
-            android:layout_height="wrap_content"
-            android:text=" D:"/>
-        <EditText
-            android:id = "@+id/name_D"
-            android:layout_height = "wrap_content"
-            android:hint = "input name"
-            android:maxLines="1" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:text="none"/>
-    </TableRow>
-    
+    <TableLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:stretchColumns="1" >
+    	<TableRow >
+	        <TextView
+	            android:id = "@+id/name_a"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text=" A:"/>
+	        <EditText
+	            android:id = "@+id/name_A"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height = "wrap_content"
+	            android:hint = "input name"
+	            android:maxLines="1" />
+	        <TextView
+	            android:id = "@+id/count_a"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+				android:layout_height="wrap_content"
+	            android:text="none"/>
+	    </TableRow>
+	    <TableRow >
+	        <TextView
+	            android:id = "@+id/name_b"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text=" B:"/>
+	        <EditText
+	            android:id = "@+id/name_B"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height = "wrap_content"
+	            android:hint = "input name"
+	            android:maxLines="1" />
+	        <TextView
+	            android:id = "@+id/count_b"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="none"/>
+	    </TableRow>
+	    <TableRow >
+	        <TextView
+	            android:id = "@+id/name_c"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text=" C:"/>
+	        <EditText
+	            android:id = "@+id/name_C"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height = "wrap_content"
+	            android:hint = "input name"
+	            android:maxLines="1" />
+	        <TextView
+	            android:id = "@+id/count_c"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="none"/>
+	    </TableRow>
+	    <TableRow >
+	        <TextView
+	            android:id = "@+id/name_d"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text=" D:"/>
+	        <EditText
+	            android:id = "@+id/name_D"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height = "wrap_content"
+	            android:hint = "input name"
+	            android:maxLines="1" />
+	        <TextView
+	            android:id = "@+id/count_d"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="none"/>
+	    </TableRow>
+	</TableLayout>    
     <Button
         android:id="@+id/start_timer"
         android:layout_width="match_parent"
@@ -76,4 +114,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="reset timer after mistake" />
+    
+    <Button
+        android:id="@+id/switch_beginner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="switch to find the current one" />
 </LinearLayout>

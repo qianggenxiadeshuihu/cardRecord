@@ -14,28 +14,13 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".activityTest"
-            android:label="welcome" >
+            android:label="cardRecord" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"	/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".secondActivity"
-            android:label="Second View" >
-            <intent-filter>
-                <action android:name="com.example.activitytest.SECOND"	/>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".thirdActivity"
-            android:label="Third View" >
-            <intent-filter>
-                <action android:name="com.example.activitytest.THIRD"	/>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+        
     </application>
 
 </manifest>
