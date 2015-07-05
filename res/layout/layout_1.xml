@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activityTest.FirstAct" >
+
+    <TableRow >
+        <TextView
+            android:layout_height="wrap_content"
+            android:text=" A:"/>
+        <EditText
+            android:id = "@+id/name_A"
+            android:layout_height = "wrap_content"
+            android:hint = "input name"
+            android:maxLines="1" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="none"/>
+    </TableRow>
+        <TableRow >
+        <TextView
+            android:layout_height="wrap_content"
+            android:text=" B:"/>
+        <EditText
+            android:id = "@+id/name_B"
+            android:layout_height = "wrap_content"
+            android:hint = "input name"
+            android:maxLines="1" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="none"/>
+    </TableRow>
+        <TableRow >
+        <TextView
+            android:layout_height="wrap_content"
+            android:text=" C:"/>
+        <EditText
+            android:id = "@+id/name_C"
+            android:layout_height = "wrap_content"
+            android:hint = "input name"
+            android:maxLines="1" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="none"/>
+    </TableRow>
+        <TableRow >
+        <TextView
+            android:layout_height="wrap_content"
+            android:text=" D:"/>
+        <EditText
+            android:id = "@+id/name_D"
+            android:layout_height = "wrap_content"
+            android:hint = "input name"
+            android:maxLines="1" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="none"/>
+    </TableRow>
+    
+    <Button
+        android:id="@+id/start_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start at beginning" />
+
+    <Button
+        android:id="@+id/stop_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="end at shuffling" />
+  
+    <Button
+        android:id="@+id/reset_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reset timer after mistake" />
+</LinearLayout>
